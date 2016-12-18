@@ -55,6 +55,8 @@ public class CountMapImpl<E> implements CountMap<E> {
 
     @Override
     public void toMap(Map<? super E, Integer> destination) {
-        destination = this.toMap();
+        for(E e : map.keySet()){
+            destination.put(e, map.get(e));
+        }
     }
 }

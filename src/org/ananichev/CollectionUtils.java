@@ -16,7 +16,7 @@ public class CollectionUtils {
         return new ArrayList<>();
     }
 
-    public static<T> int indexOf(List<? extends T> source, T o) {
+    public static<T> int indexOf(List<? super T> source, T o) {
         return source.indexOf(o);
     }
 
